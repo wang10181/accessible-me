@@ -3,15 +3,12 @@ body {
   background-color: grey;
   margin: 0;
   padding: 0;
+  color: white;
 }
-
+/* *********************Fixes for Contrast Issues: ********************************/
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+h2 {
+  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;color: #fff;
 }
 
 .container {
@@ -49,7 +46,7 @@ form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  padding: 3rem 1rem;
 }
 
 form textarea {
@@ -68,4 +65,19 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+ /*********************** Accessibility skip link setup***********************************/
+ .skip-link {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 7px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
 }
