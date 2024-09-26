@@ -44,16 +44,16 @@
           <li>Phone: <a href="tel:+16130000000" itemprop="telephone">613-000-0000</a></li>
         </ul>
         <h1>Address</h1>
-        <p itemprop="Address" itemscope itempty="https://schema.org/PostalAddress">
-          <span itemprop="name">Jambox Studios</span><bf>
-          <span itemprop="Streetaddress">123 Guitar Road </span><br>
+        <p itemprop="Address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="name">Jambox Studios</span>
+          <span itemprop="Streetaddress">123 Guitar Road </span>
           <span itemprop="addressLocality">Musicville</span>, <span itemprop="addressRegion">Danceistan</span><br>
           <span itemprop="postalcode">B3T 0L0</span>
         </p>
       </div>
       <div class="contact-section" id="contact" aria-labelledby="contact-heading">
         <h1 id="contact-heading">Contact Us</h1>
-        <form action="thanks.html" role="form" aria-labelledby="contact-heading">
+        <form action="thanks.html" aria-labelledby="contact-heading">
           <label for="full-name">Full Name</label>
           <input type="text" id="full-name" name="full-name" placeholder="Full Name" aria-required="true">
           <label for="email">Email</label>
@@ -73,10 +73,12 @@
     </div>
     <!-- ********************************************** -->
       <!-- Footer with ARIA role -->
-
-    <footer class="site-footer" role="contentinfo">
-      &copy; 2021 Jam Box Studios
-    </footer>
+      <h2 id="site-footer">Site Footer</h2>
+      
+      <footer class="site-footer" aria-labelledby="site-footer">
+        &copy; 2021 Jam Box Studios
+      </footer>
+    
   </div>
 </body>
 
